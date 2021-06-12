@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Tomorrow
+- Font Author: Copyright 2019 The Tomorrow Project Authors (https://github.com/MonicaRizzolli/Tomorrow)
+- Font Source: http://fonts.gstatic.com/s/tomorrow/v5/WBLmrETNbFtZCeGqgSXVcWHALdio.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL)
