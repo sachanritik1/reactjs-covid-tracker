@@ -17,6 +17,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
+  margin-top: 10 0px;
 }
 
 .app_left {
@@ -52,4 +53,9 @@ body {
   .app {
     flex-direction: column;
   }
+}
+
+.population_page {
+  font-size: larger;
+  margin-right: 50%;
 }
