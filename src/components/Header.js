@@ -3,10 +3,12 @@ import { Link } from "react-router-dom"
 function Header() {
 	return (
 		<header className="header">
-			<h2>Worldometer</h2>
+			<a href="/">
+				<h2>Worldometer</h2>
+			</a>
+
 			<li>
-				<a href="/">Home</a>
-				<a href="/covid">Covid-Tracker</a>
+				<a href="/covid">Coronavirus</a>
 				<a href="/Population">Population</a>
 			</li>
 		</header>
