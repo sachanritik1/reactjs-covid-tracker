@@ -90,7 +90,7 @@ body {
 	text-align: center;
 }
 
-.covid div {
+.covid div div {
 	background-color: rgb(190, 229, 230);
 	border: 5px;
 	border-radius: 10px;
@@ -157,4 +157,77 @@ body {
 	border-radius: 10px;
 	max-height: 450px;
 	width: 80%;
+}
+
+.home {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.home .title {
+	animation-name: title;
+	animation-duration: 6s;
+	margin-bottom: 20px;
+}
+
+.home .title h1 {
+	margin-bottom: 10px;
+}
+
+@keyframes title {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.home .title p {
+	margin-bottom: 20px;
+}
+
+.home .pages {
+	margin-top: 60px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	animation-name: pages-animation;
+	animation-duration: 6s;
+}
+
+.home .pages a {
+	text-decoration: none;
+	color: #fff;
+	background-color: darkslategray;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+@keyframes pages-animation {
+	0% {
+		opacity: 0;
+		margin-top: 10px;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 60px;
+	}
+}
+
+.home .pages a:hover {
+	text-decoration: underline;
+	color: rgb(8, 50, 64);
+	background-color: beige;
+}
+
+.home .pages p {
+	padding: 10px;
+	border-radius: 10px;
 }

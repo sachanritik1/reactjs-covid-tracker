@@ -34,7 +34,7 @@ function Population() {
 
 	return (
 		<div className="population">
-			<h1>World's Population is : {worldPopulation}</h1>
+			{<h1>World's Population is : {worldPopulation}</h1>}
 			<h2>Population of the respective countries (based on 2011 data) :</h2>
 			<table className="table">
 				<tbody>

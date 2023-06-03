@@ -53,45 +53,47 @@ function Covid() {
 	return (
 		<div className="covid">
 			<div>
-				<div className="title">
-					<h1>COVID-19 TRACKER</h1>
-					<form>
-						<select
-							variant="outlined"
-							onChange={onCountryChange}
-							value={country}
-						>
-							<option value="worldwide">Worldwide</option>
-							{countries.map((country) => (
-								<option value={country.value}>{country.name}</option>
-							))}
-						</select>
-					</form>
-				</div>
-				<div className="stats">
-					<InfoBox
-						title="Coronavirus Cases"
-						cases={`+${countryInfo.todayCases}`}
-						total={countryInfo.cases}
-					/>
-					<InfoBox title="Active Cases" cases={countryInfo.active} />
-
-					<InfoBox
-						title="Recovered"
-						cases={`+${countryInfo.todayRecovered}`}
-						total={countryInfo.recovered}
-					/>
-					<InfoBox
-						title="Deaths"
-						cases={`+${countryInfo.todayDeaths}`}
-						total={countryInfo.deaths}
-					/>
-				</div>
-			</div>
-			<div>
 				<div>
-					<h3>Live Cases by Country-</h3>
-					<Table countries={tableData} />
+					<div className="title">
+						<h1>COVID-19 TRACKER</h1>
+						<form>
+							<select
+								variant="outlined"
+								onChange={onCountryChange}
+								value={country}
+							>
+								<option value="worldwide">Worldwide</option>
+								{countries.map((country) => (
+									<option value={country.value}>{country.name}</option>
+								))}
+							</select>
+						</form>
+					</div>
+					<div className="stats">
+						<InfoBox
+							title="Coronavirus Cases"
+							cases={`+${countryInfo.todayCases}`}
+							total={countryInfo.cases}
+						/>
+						<InfoBox title="Active Cases" cases={countryInfo.active} />
+
+						<InfoBox
+							title="Recovered"
+							cases={`+${countryInfo.todayRecovered}`}
+							total={countryInfo.recovered}
+						/>
+						<InfoBox
+							title="Deaths"
+							cases={`+${countryInfo.todayDeaths}`}
+							total={countryInfo.deaths}
+						/>
+					</div>
+				</div>
+				<div>
+					<div>
+						<h3>Live Cases by Country-</h3>
+						<Table countries={tableData} />
+					</div>
 				</div>
 			</div>
 		</div>
